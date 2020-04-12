@@ -1,6 +1,6 @@
 branch-defaults:
-    master:
-      environment: WorkPals-env
+  master:
+    environment: WorkPals-env
   global:
     application_name: work_pals
     default_ec2_keyname: e-pqimpmyx3q
