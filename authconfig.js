@@ -1,7 +1,10 @@
-const  data =   {
-    domain: "workpals.auth0.com",
-    clientID:"WrryzBTPUhCl1Ik6rCeMnmcTrVBGSQeD",
-    clientSecret:"Rd7NQ8X6IMcvlYDnuyTHrHoxFcFvAdRt--FVOKpkdT6BTT5BwDY3KjaDcGRU2U20",
-    callbackURL: "http://localhost:3000/welcome",
-}
-module.exports = data;
+const config = {
+    required: false,
+    auth0Logout: true,
+    baseURL: "http://localhost:3000",
+    issuerBaseURL: "https://workpals.auth0.com",
+    clientID: "WrryzBTPUhCl1Ik6rCeMnmcTrVBGSQeD",
+    appSessionSecret: "a long, randomly-generated string stored in env"
+  };
+  
+module.exports = config;
