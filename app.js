@@ -43,7 +43,7 @@ app.get('/profile', requiresAuth(), (req, res) => {
   });
 app.get("/logout", (req, res) => {
     req.logout({
-        returnTo: "http://localhost:3000",
+        returnTo: "http://www.workpals.co/",
         client_id: config.clientID
     });
     res.redirect("/");
