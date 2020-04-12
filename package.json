@@ -26,6 +26,7 @@
     "express-session": "^1.17.0",
     "glob": "^7.1.6",
     "i": "^0.3.6",
+    "mocha": "^7.1.1",
     "mongoose": "^5.9.7",
     "nodemon": "^2.0.3",
     "passport": "^0.4.1",
