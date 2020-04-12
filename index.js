@@ -33,11 +33,10 @@ mongoose.connect('mongodb+srv://workpals:'+ process.env.MONGOPASSWORD +'@cluster
 
 app.use(auth(config));
 app.set('port', process.env.PORT || 3000);
-app.set('view engine', 'pug');
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.render('index');
+  res.send('index');
 });
 app.get('/profile', requiresAuth(), (req, res) => {
     res.send(JSON.stringify(req.openid.user));
